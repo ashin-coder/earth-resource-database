@@ -1,0 +1,6 @@
+Jun 07, 2023 8:27:24 PM org.earth.swing.ui.Main main
+INFO: User Started the Earth Resource Database Application using GUI
+Jun 07, 2023 8:27:28 PM org.earth.swing.ui.Home actionPerformed
+INFO:  User Selected 'Insert new Data' option 
+Jun 07, 2023 8:27:30 PM org.earth.swing.ui.InsertionPage actionPerformed
+INFO:  User Selected 'Exit From the Menu' 

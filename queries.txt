@@ -1,0 +1,44 @@
+100000: SELECT name FROM sqlite_master WHERE type='table'
+100010: SELECT * FROM continents where continent_name= ?
+100020: SELECT * FROM Countries where country_name = ?
+10000:CREATE TABLE IF NOT EXISTS Continents(continent_id VARCHAR(255) UNIQUE NOT NULL PRIMARY KEY ,continent_name VARCHAR(255))
+10100:CREATE TABLE IF NOT EXISTS Countries (country_id VARCHAR(255) UNIQUE NOT NULL PRIMARY KEY ,country_name VARCHAR(255) ,continent_id VARCHAR(255) ,FOREIGN KEY (continent_id) REFERENCES Continents(continent_id))
+10200:CREATE TABLE IF NOT EXISTS States (state_id VARCHAR(255) UNIQUE NOT NULL PRIMARY KEY ,state_name VARCHAR(255) ,country_id VARCHAR(255) ,state_population INTEGER ,FOREIGN KEY (country_id) REFERENCES Countries(country_id))
+10300:CREATE TABLE IF NOT EXISTS Agricultureresources (agri_resource_id INTEGER PRIMARY KEY AUTOINCREMENT ,agri_resource_name VARCHAR(255) ,amount DOUBLE ,agri_category VARCHAR(255) ,state_id VARCHAR(255) ,FOREIGN KEY (state_id) REFERENCES States(state_id))
+10400:CREATE TABLE IF NOT EXISTS  Mineralresources (mineral_resource_id INTEGER PRIMARY KEY AUTOINCREMENT,mineral_resource_name VARCHAR(255) ,amount DOUBLE ,reserve DOUBLE ,state_id VARCHAR(255) ,FOREIGN KEY (state_id) REFERENCES States(state_id))
+20000:INSERT INTO Continents (continent_id,continent_name) VALUES (?, ?)
+20100:INSERT INTO Countries (country_id,country_name,continent_id) VALUES (?, ?,?)
+20200:INSERT INTO States (state_id,state_name,country_id,state_population) VALUES (?,?,?,?)
+20300:INSERT INTO Agricultureresources (agri_resource_name,amount,agri_category,state_id) VALUES (?,?,?,?)
+20400:INSERT INTO Mineralresources (mineral_resource_name,amount,reserve,state_id) VALUES (?,?,?,?)
+30000:DELETE FROM Continents WHERE continent_id = ?
+30001:DELETE FROM Countries WHERE country_id = ?
+30002:DELETE FROM States WHERE state_id = ?
+30003:DELETE FROM Agricultureresources WHERE agri_resource_id = ?
+30004:DELETE FROM Mineralresources WHERE mineral_resource_id = ?
+30100:UPDATE Continents SET continent_id = ? WHERE continent_id = ?
+30101:UPDATE Continents SET continent_name = ? WHERE continent_id = ?
+30200:UPDATE Countries SET country_id = ? WHERE country_id = ?
+30201:UPDATE Countries SET country_name = ? WHERE country_id = ?
+30202:UPDATE Countries SET continent_id = ? WHERE country_id = ?
+30300:UPDATE States SET state_id = ? WHERE state_id = ?
+30301:UPDATE States SET state_name = ? WHERE state_id = ?
+30302:UPDATE States SET country_id = ? WHERE state_id = ?
+30303:UPDATE States SET state_population = ? WHERE state_id = ?
+30400:UPDATE Agricultureresources SET agri_resource_name = ? WHERE agri_resource_id = ?
+30401:UPDATE Agricultureresources SET amount = ? WHERE agri_resource_id = ?
+30402:UPDATE Agricultureresources SET agri_category = ? WHERE agri_resource_id = ?
+30403:UPDATE Agricultureresources SET state_id = ? WHERE agri_resource_id = ?
+30500:UPDATE Mineralresources SET mineral_resource_name = ? WHERE mineral_resource_id = ?
+30501:UPDATE Mineralresources SET amount = ? WHERE mineral_resource_id = ?
+30502:UPDATE Mineralresources SET reserve = ? WHERE mineral_resource_id = ?
+30503:UPDATE Mineralresources SET state_id = ? WHERE mineral_resource_id = ?
+40000:SELECT name FROM sqlite_master WHERE type='table';
+40110:SELECT * FROM continents
+40120:SELECT * FROM countries
+40130:SELECT * FROM states
+40140:SELECT * FROM Agricultureresources
+40150:SELECT * FROM Mineralresources
+40200:SELECT SUM(state_population) FROM States WHERE country_id IN (SELECT country_id FROM Countries WHERE country_name =?)
+40300:SELECT COUNT(agri_resource_name) FROM Agricultureresources JOIN States ON Agricultureresources.state_id = States.state_id JOIN Countries ON States.country_id = Countries.country_id WHERE Agricultureresources.agri_resource_name = ? AND Countries.country_name = ?
+40400:SELECT COUNT(mineral_resource_name) FROM Mineralresources JOIN States ON Mineralresources.state_id = States.state_id JOIN Countries ON States.country_id = Countries.country_id WHERE Mineralresources.mineral_resource_name = ? AND Countries.country_name = ?

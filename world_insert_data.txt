@@ -1,0 +1,381 @@
+  /// SOME SAMPLE DATA TO INSERT INTO EARTH DATABASE
+
+
+
+    @Test
+    public void insert_continent_test(){
+        db_Utils.insertContinent01("AN","Antartica");
+        db_Utils.insertContinent01("AF","Africa");
+        db_Utils.insertContinent01("AS","Asia");
+        db_Utils.insertContinent01("EU","Europe");
+        db_Utils.insertContinent01("NA","North America");
+        db_Utils.insertContinent01("SC","South America");
+        db_Utils.insertContinent01("OC","Oceania");
+
+//
+//        List<String> selects = db_Utils.select_continents();
+//
+//        print_jsonArray(selects.get(1));
+//        Assert.assertEquals(true,selects.get(1).contains("asia"));
+
+    }
+
+    @Test
+    public void insert_country_test(){
+
+        //        Africa
+        db_Utils.insertCountry01("DZ", "Algeria", "AF");
+        db_Utils.insertCountry01("AO", "Angola", "AF");
+        db_Utils.insertCountry01("BJ", "Benin", "AF");
+        db_Utils.insertCountry01("BW", "Botswana", "AF");
+        db_Utils.insertCountry01("BF", "Burkina Faso", "AF");
+
+        // Antarctica
+        db_Utils.insertCountry01("AQ", "Antarctica", "AN");
+        db_Utils.insertCountry01("BV", "Bouvet Island", "AN");
+        db_Utils.insertCountry01("TF", "French Southern Territories", "AN");
+        db_Utils.insertCountry01("HM", "Heard Island and McDonald Islands", "AN");
+        db_Utils.insertCountry01("GS", "South Georgia and the South Sandwich Islands", "AN");
+
+        // Asia
+        db_Utils.insertCountry01("CN", "China", "AS");
+        db_Utils.insertCountry01("IN", "India", "AS");
+        db_Utils.insertCountry01("JP", "Japan", "AS");
+        db_Utils.insertCountry01("RU", "Russia", "AS");
+        db_Utils.insertCountry01("SA", "Saudi Arabia", "AS");
+
+        // Europe
+        db_Utils.insertCountry01("AT", "Austria", "EU");
+        db_Utils.insertCountry01("BE", "Belgium", "EU");
+        db_Utils.insertCountry01("FR", "France", "EU");
+        db_Utils.insertCountry01("DE", "Germany", "EU");
+        db_Utils.insertCountry01("IT", "Italy", "EU");
+
+        // North America
+        db_Utils.insertCountry01("CA", "Canada", "NA");
+        db_Utils.insertCountry01("CR", "Costa Rica", "NA");
+        db_Utils.insertCountry01("MX", "Mexico", "NA");
+        db_Utils.insertCountry01("PA", "Panama", "NA");
+        db_Utils.insertCountry01("US", "United States", "NA");
+
+        // Oceania
+        db_Utils.insertCountry01("AU", "Australia", "OC");
+        db_Utils.insertCountry01("FJ", "Fiji", "OC");
+        db_Utils.insertCountry01("KI", "Kiribati", "OC");
+        db_Utils.insertCountry01("NZ", "New Zealand", "OC");
+        db_Utils.insertCountry01("PG", "Papua New Guinea", "OC");
+
+       // South America
+        db_Utils.insertCountry01("AR", "Argentina", "SA");
+        db_Utils.insertCountry01("BR", "Brazil", "SA");
+        db_Utils.insertCountry01("CL", "Chile", "SA");
+        db_Utils.insertCountry01("CO", "Colombia", "SA");
+        db_Utils.insertCountry01("PE", "Peru", "SA");
+
+
+        //        List<String> updates = db_Utils.insertCountry01("IN","India","AS");
+
+//        Assert.assertEquals("1",updates.get(1));
+//        List<String> selects = db_Utils.select_countries(new String[]{ "India"} );
+//        //print_jsonArray(selects.get(1));
+//        log.info(selects.get(1));
+
+    }
+
+    @Test
+    public void insert_states_test(){
+//        batch 1
+        db_Utils.insertState01("AD", "Adrar", "DZ", 146000);
+        db_Utils.insertState01("CH", "Chlef", "DZ", 184000);
+        db_Utils.insertState01("KA", "Khenchela", "DZ", 40000);
+        db_Utils.insertState01("OR", "Oran", "DZ", 800000);
+        db_Utils.insertState01("TI", "Tizi Ouzou", "DZ", 350000);
+        db_Utils.insertState01("BN", "Bengo", "AO", 170000);
+        db_Utils.insertState01("CA", "Cabinda", "AO", 80000);
+        db_Utils.insertState01("CC", "Cuando Cubango", "AO", 184000);
+        db_Utils.insertState01("HK", "Huambo", "AO", 800000);
+        db_Utils.insertState01("LU", "Luanda", "AO", 2900000);
+        db_Utils.insertState01("AK", "Atakora", "BJ", 360000);
+        db_Utils.insertState01("AL", "Alibori", "BJ", 300000);
+        db_Utils.insertState01("BO", "Borgou", "BJ", 770000);
+        db_Utils.insertState01("DO", "Donga", "BJ", 200000);
+        db_Utils.insertState01("LC", "Littoral", "BJ", 650000);
+        db_Utils.insertState01("CE", "Central", "BW", 20000);
+        db_Utils.insertState01("KG", "Kgalagadi", "BW", 45000);
+        db_Utils.insertState01("KL", "Kgatleng", "BW", 80000);
+        db_Utils.insertState01("KW", "Kweneng", "BW", 120000);
+        db_Utils.insertState01("SE", "Southeast", "BW", 270000);
+        db_Utils.insertState01("BA", "Bam", "BF", 300000);
+        db_Utils.insertState01("BL", "Boulkiemde", "BF", 150000);
+        db_Utils.insertState01("KO", "Kourweogo", "BF", 200000);
+        db_Utils.insertState01("NO", "Nahouri", "BF", 70000);
+        db_Utils.insertState01("OU", "Oubritenga", "BF", 400000);
+
+
+//batch 2
+        db_Utils.insertState01("BJ", "Beijing", "CN", 21700000);
+        db_Utils.insertState01("SH", "Shanghai", "CN", 24180000);
+        db_Utils.insertState01("GD", "Guangdong", "CN", 109900000);
+        db_Utils.insertState01("JS", "Jiangsu", "CN", 80800000);
+        db_Utils.insertState01("SD", "Shandong", "CN", 100000000);
+        db_Utils.insertState01("DL", "Delhi", "IN", 18900000);
+        db_Utils.insertState01("MH", "Maharashtra", "IN", 112400000);
+        db_Utils.insertState01("TN", "Tamil Nadu", "IN", 77900000);
+        db_Utils.insertState01("UP", "Uttar Pradesh", "IN", 224000000);
+        db_Utils.insertState01("WB", "West Bengal", "IN", 91900000);
+        db_Utils.insertState01("TK", "Tokyo", "JP", 13970000);
+        db_Utils.insertState01("OS", "Osaka", "JP", 8839000);
+        db_Utils.insertState01("HT", "Hokkaido", "JP", 5320000);
+        db_Utils.insertState01("KN", "Kanagawa", "JP", 9200000);
+        db_Utils.insertState01("AI", "Aichi", "JP", 7480000);
+        db_Utils.insertState01("MSK", "Moscow", "RU", 12600000);
+        db_Utils.insertState01("SPB", "St. Petersburg", "RU", 5380000);
+        db_Utils.insertState01("MOW", "Moscow Oblast", "RU", 7170000);
+        db_Utils.insertState01("KR", "Krasnodar Krai", "RU", 5700000);
+        db_Utils.insertState01("BA", "Bashkortostan", "RU", 4000000);
+
+
+//batch 3
+        db_Utils.insertState01("RI", "Riyadh", "SA", 7440000);
+        db_Utils.insertState01("MJ", "Makkah", "SA", 9460000);
+        db_Utils.insertState01("MD", "Madinah", "SA", 1400000);
+        db_Utils.insertState01("EA", "Eastern Province", "SA", 4900000);
+        db_Utils.insertState01("AS", "Asir", "SA", 2200000);
+        db_Utils.insertState01("BU", "Burgenland", "AT", 290000);
+        db_Utils.insertState01("CA", "Carinthia", "AT", 560000);
+        db_Utils.insertState01("ST", "Styria", "AT", 1200000);
+        db_Utils.insertState01("TR", "Tyrol", "AT", 760000);
+        db_Utils.insertState01("VG", "Vorarlberg", "AT", 400000);
+        db_Utils.insertState01("BRU", "Brussels-Capital Region", "BE", 1200000);
+        db_Utils.insertState01("VAN", "Flemish Brabant", "BE", 1150000);
+        db_Utils.insertState01("WAL", "Walloon Brabant", "BE", 400000);
+        db_Utils.insertState01("WLG", "Liege", "BE", 1100000);
+        db_Utils.insertState01("WNA", "Namur", "BE", 490000);
+
+//batch 4
+        db_Utils.insertState01("ARA", "Auvergne-Rhone-Alpes", "FR", 7980000);
+        db_Utils.insertState01("BFC", "Bourgogne-Franche-Comte", "FR", 2800000);
+        db_Utils.insertState01("IDF", "Ile-de-France", "FR", 12100000);
+        db_Utils.insertState01("NAQ", "Nouvelle-Aquitaine", "FR", 5800000);
+        db_Utils.insertState01("OCC", "Occitanie", "FR", 6000000);
+        db_Utils.insertState01("BAY", "Bavaria", "DE", 13000000);
+        db_Utils.insertState01("HES", "Hesse", "DE", 6300000);
+        db_Utils.insertState01("NDS", "Lower Saxony", "DE", 8000000);
+        db_Utils.insertState01("NRW", "North Rhine-Westphalia", "DE", 18000000);
+        db_Utils.insertState01("SAX", "Saxony", "DE", 4000000);
+        db_Utils.insertState01("LAZ", "Lazio", "IT", 5800000);
+        db_Utils.insertState01("LIG", "Liguria", "IT", 1600000);
+        db_Utils.insertState01("LOM", "Lombardy", "IT", 10000000);
+        db_Utils.insertState01("PIE", "Piedmont", "IT", 4400000);
+        db_Utils.insertState01("TOS", "Tuscany", "IT", 3700000);
+        db_Utils.insertState01("AB", "Alberta", "CA", 4450000);
+        db_Utils.insertState01("BC", "British Columbia", "CA", 5110000);
+        db_Utils.insertState01("MB", "Manitoba", "CA", 1370000);
+        db_Utils.insertState01("ON", "Ontario", "CA", 14700000);
+        db_Utils.insertState01("QC", "Quebec", "CA", 8570000);
+        db_Utils.insertState01("AL", "Alajuela", "CR", 300000);
+        db_Utils.insertState01("CA", "Cartago", "CR", 150000);
+        db_Utils.insertState01("GU", "Guanacaste", "CR", 220000);
+        db_Utils.insertState01("HE", "Heredia", "CR", 140000);
+        db_Utils.insertState01("SJ", "San Jose", "CR", 350000);
+
+//batch 5
+        db_Utils.insertState01("BC", "Baja California", "MX", 3310000);
+        db_Utils.insertState01("CM", "Campeche", "MX", 899000);
+        db_Utils.insertState01("DF", "Mexico City", "MX", 8870000);
+        db_Utils.insertState01("MX", "Mexico State", "MX", 17400000);
+        db_Utils.insertState01("OA", "Oaxaca", "MX", 4060000);
+        db_Utils.insertState01("BO", "Bocas del Toro", "PA", 125000);
+        db_Utils.insertState01("CO", "Coclé", "PA", 230000);
+        db_Utils.insertState01("HE", "Herrera", "PA", 105000);
+        db_Utils.insertState01("PA", "Panama", "PA", 1900000);
+        db_Utils.insertState01("VE", "Veraguas", "PA", 250000);
+        db_Utils.insertState01("CA", "California", "US", 39500000);
+        db_Utils.insertState01("FL", "Florida", "US", 21400000);
+        db_Utils.insertState01("NY", "New York", "US", 19500000);
+        db_Utils.insertState01("TX", "Texas", "US", 29000000);
+        db_Utils.insertState01("WA", "Washington", "US", 7700000);
+        db_Utils.insertState01("NSW", "New South Wales", "AU", 7992000);
+        db_Utils.insertState01("VIC", "Victoria", "AU", 6681000);
+        db_Utils.insertState01("QLD", "Queensland", "AU", 5161000);
+        db_Utils.insertState01("WA", "Western Australia", "AU", 2669000);
+        db_Utils.insertState01("SA", "South Australia", "AU", 1335000);
+        db_Utils.insertState01("C", "Central", "FJ", 397500);
+        db_Utils.insertState01("E", "Eastern", "FJ", 336100);
+        db_Utils.insertState01("N", "Northern", "FJ", 125600);
+        db_Utils.insertState01("W", "Western", "FJ", 105300);
+        db_Utils.insertState01("R", "Rotuma", "FJ", 1950);
+        db_Utils.insertState01("G", "Gilbert Islands", "KI", 97904);
+        db_Utils.insertState01("L", "Line Islands", "KI", 1676);
+        db_Utils.insertState01("P", "Phoenix Islands", "KI", 2158);
+        db_Utils.insertState01("B", "Banaba", "KI", 295);
+        db_Utils.insertState01("A", "Abaiang", "KI", 5223);
+        db_Utils.insertState01("AKL", "Auckland", "NZ", 1695000);
+        db_Utils.insertState01("CAN", "Canterbury", "NZ", 622500);
+        db_Utils.insertState01("WGN", "Wellington", "NZ", 496500);
+        db_Utils.insertState01("WTL", "Waikato", "NZ", 468900);
+        db_Utils.insertState01("OTG", "Otago", "NZ", 225300);
+        db_Utils.insertState01("NCD", "National Capital District", "PG", 324000);
+        db_Utils.insertState01("MD", "Madang", "PG", 209000);
+        db_Utils.insertState01("EH", "Eastern Highlands", "PG", 197000);
+        db_Utils.insertState01("WB", "West New Britain", "PG", 171000);
+        db_Utils.insertState01("CPM", "Central Province", "PG", 159000);
+
+
+//batch 6
+        db_Utils.insertState01("BA", "Buenos Aires", "AR", 15355000);
+        db_Utils.insertState01("CT", "Catamarca", "AR", 397000);
+        db_Utils.insertState01("CD", "Chaco", "AR", 1054000);
+        db_Utils.insertState01("CU", "Chubut", "AR", 509000);
+        db_Utils.insertState01("CO", "Córdoba", "AR", 3306000);
+        db_Utils.insertState01("AC", "Acre", "BR", 869265);
+        db_Utils.insertState01("AL", "Alagoas", "BR", 3351543);
+        db_Utils.insertState01("AP", "Amapá", "BR", 861773);
+        db_Utils.insertState01("AM", "Amazonas", "BR", 4207714);
+        db_Utils.insertState01("BA", "Bahia", "BR", 14930634);
+        db_Utils.insertState01("AI", "Aisén", "CL", 100000);
+        db_Utils.insertState01("AN", "Antofagasta", "CL", 618000);
+        db_Utils.insertState01("AT", "Atacama", "CL", 279000);
+        db_Utils.insertState01("BI", "Biobío", "CL", 1520000);
+        db_Utils.insertState01("CO", "Coquimbo", "CL", 791000);
+        db_Utils.insertState01("AMA", "Amazonas", "CO", 77354);
+        db_Utils.insertState01("ANT", "Antioquia", "CO", 6647534);
+        db_Utils.insertState01("ARA", "Arauca", "CO", 26400);
+        db_Utils.insertState01("ATL", "Atlántico", "CO", 2578438);
+        db_Utils.insertState01("BOL", "Bolívar", "CO", 2227515);
+        db_Utils.insertState01("CAL", "Cajamarca", "PE", 1360000);
+        db_Utils.insertState01("CUS", "Cusco", "PE", 1275000);
+        db_Utils.insertState01("ICA", "Ica", "PE", 828000);
+        db_Utils.insertState01("JUN", "Junín", "PE", 1254000);
+        db_Utils.insertState01("LAL", "La Libertad", "PE", 1935000);
+
+
+
+//        db_Utils.insertState01("KL","kerala","india",300);
+//        List<String> selects = db_Utils.select_states();
+
+//        print_jsonArray(selects.get(1));
+//        Assert.assertEquals(true,selects.get(1).contains("asia"));
+
+
+    }
+
+    @Test
+    public void insert_agriculture_test(){
+        db_Utils.insertAgriculturalResource01("Rice", 200, "Grains", "SD");
+        db_Utils.insertAgriculturalResource01("Wheat", 150, "Grains", "UP");
+        db_Utils.insertAgriculturalResource01("Corn", 100, "Grains", "MH");
+        db_Utils.insertAgriculturalResource01("Potato", 80, "Vegetables", "TN");
+        db_Utils.insertAgriculturalResource01("Onion", 60, "Vegetables", "WB");
+        db_Utils.insertAgriculturalResource01("Tomato", 50, "Vegetables", "DL");
+        db_Utils.insertAgriculturalResource01("Cotton", 300, "Fiber", "JS");
+        db_Utils.insertAgriculturalResource01("Sugarcane", 250, "Sweeteners", "GD");
+        db_Utils.insertAgriculturalResource01("Soybean", 180, "Oilseeds", "SH");
+        db_Utils.insertAgriculturalResource01("Tea", 100, "Beverages", "BJ");
+
+        db_Utils.insertAgriculturalResource01("Corn", 150, "Grains", "MX");
+        db_Utils.insertAgriculturalResource01("Wheat", 100, "Grains", "MX");
+        db_Utils.insertAgriculturalResource01("Coffee", 50, "Beans", "OA");
+        db_Utils.insertAgriculturalResource01("Sugarcane", 75, "Vegetables", "PA");
+        db_Utils.insertAgriculturalResource01("Rice", 200, "Grains", "VE");
+        db_Utils.insertAgriculturalResource01("Beef", 500, "Meat", "CA");
+        db_Utils.insertAgriculturalResource01("Oranges", 80, "Fruits", "FL");
+        db_Utils.insertAgriculturalResource01("Apples", 90, "Fuits", "NY");
+        db_Utils.insertAgriculturalResource01("Cotton", 120, "Fibers", "TX");
+        db_Utils.insertAgriculturalResource01("Potatoes", 70, "Vegetables", "WA");
+        db_Utils.insertAgriculturalResource01("Beef", 300, "Meat", "NSW");
+        db_Utils.insertAgriculturalResource01("Lamb", 200, "Meat", "VIC");
+        db_Utils.insertAgriculturalResource01("Sugar", 80, "Vegetables", "QLD");
+        db_Utils.insertAgriculturalResource01("Wheat", 120, "Grains", "WA");
+
+        db_Utils.insertAgriculturalResource01("Banana", 70, "Fruits", "AC");
+        db_Utils.insertAgriculturalResource01("Coconut", 90, "Fruits", "AL");
+        db_Utils.insertAgriculturalResource01("Rubber", 120, "Trees", "AP");
+        db_Utils.insertAgriculturalResource01("Timber", 130, "Trees", "AM");
+
+
+//        db_Utils.insertAgriculturalResource01("rice",250,"grains","kl");
+        List<String> selects = db_Utils.select_agriculture_resource();
+
+//        print_jsonArray(selects.get(1));
+//        Assert.assertEquals(true,selects.get(1).contains("asia"));
+    }
+
+    @Test
+    public void insert_mineral_test(){
+        db_Utils.insertMineralResource01("Coal", 10000, 1000000, "SH");
+        db_Utils.insertMineralResource01("Oil", 5000, 500000, "GD");
+        db_Utils.insertMineralResource01("Gold", 100, 5000, "JS");
+        db_Utils.insertMineralResource01("Lithium", 2000, 50000, "SD");
+        db_Utils.insertMineralResource01("Coal", 1000, 100000, "DL");
+        db_Utils.insertMineralResource01("Oil", 8000, 800000, "MH");
+        db_Utils.insertMineralResource01("Lithium", 500, 10000, "TN");
+        db_Utils.insertMineralResource01("Coal", 25000, 5000000, "UP");
+        db_Utils.insertMineralResource01("Gold", 500, 20000, "WB");
+        db_Utils.insertMineralResource01("Oil", 2000, 50000, "TK");
+        db_Utils.insertMineralResource01("Coal", 1500, 30000, "OS");
+        db_Utils.insertMineralResource01("Lithium", 1000, 20000, "HT");
+        db_Utils.insertMineralResource01("Gold", 200, 10000, "KN");
+        db_Utils.insertMineralResource01("Oil", 1500, 50000, "AI");
+        db_Utils.insertMineralResource01("Coal", 8000, 1000000, "MSK");
+        db_Utils.insertMineralResource01("Lithium", 500, 25000, "SPB");
+        db_Utils.insertMineralResource01("Gold", 1000, 50000, "MOW");
+        db_Utils.insertMineralResource01("Oil", 2000, 100000, "KR");
+        db_Utils.insertMineralResource01("Coal", 3000, 50000, "BA");
+        db_Utils.insertMineralResource01("Gold", 500, 50000, "BC");
+        db_Utils.insertMineralResource01("Silver", 300, 30000, "BC");
+        db_Utils.insertMineralResource01("Copper", 200, 20000, "BC");
+        db_Utils.insertMineralResource01("Oil", 2000, 100000, "CM");
+        db_Utils.insertMineralResource01("Gas", 1500, 80000, "CM");
+        db_Utils.insertMineralResource01("Gold", 700, 70000, "DF");
+        db_Utils.insertMineralResource01("Silver", 500, 50000, "DF");
+        db_Utils.insertMineralResource01("Coal", 5000, 500000, "MX");
+        db_Utils.insertMineralResource01("Iron", 3000, 300000, "MX");
+        db_Utils.insertMineralResource01("Copper", 2000, 200000, "MX");
+        db_Utils.insertMineralResource01("Gold", 400, 40000, "OA");
+        db_Utils.insertMineralResource01("Silver", 300, 30000, "OA");
+        db_Utils.insertMineralResource01("Zinc", 100, 10000, "OA");
+        db_Utils.insertMineralResource01("Gold", 500, 50000, "BO");
+        db_Utils.insertMineralResource01("Silver", 300, 30000, "BO");
+        db_Utils.insertMineralResource01("Copper", 200, 20000, "BO");
+        db_Utils.insertMineralResource01("Gold", 500, 50000, "CO");
+        db_Utils.insertMineralResource01("Silver", 300, 30000, "CO");
+        db_Utils.insertMineralResource01("Copper", 200, 20000, "CO");
+
+//        db_Utils.insertMineralResource01("Iron",1000,100000,"OD");
+//        List<String> selects = db_Utils.select_mineral_resource();
+
+//        print_jsonArray(selects.get(1));
+//        Assert.assertEquals(true,selects.get(1).contains("asia"));
+    }
+
+    private void print_jsonArray(String result){
+        JSONArray rows = new JSONArray(result);
+        int row_size = rows.length();
+        for (Object row : rows) {
+            JSONArray each_row = (JSONArray) row;
+            for (Object value: each_row){
+                String col_value = (String) value;
+                log.info("column value ="+ col_value);
+            }
+        }
+    }
+
+
+    @Test
+    public void sum_count_test(){
+        List<String>   sum = db_Utils.select_population("India");
+        log.info("sum of population : "+sum.get(1));
+
+        List<String>   agri_count = db_Utils.count_agri_resource("rice","India");
+        log.info("count of agri resource in a country : "+agri_count.get(1));
+
+        List<String>  mineral_count = db_Utils.count_mineral_resource("steel","India");
+        log.info("count of mineral resource in a country : "+mineral_count.get(1));
+
+
+//        print_jsonArray(selects.get(1));
+//        Assert.assertEquals(true,selects.get(1).contains("asia"));
+    }
+
+}

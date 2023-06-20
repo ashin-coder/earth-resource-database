@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Earth Resource Database</h1>
 
-![home_page](https://github.com/ashin-coder/earth-resource-database/assets/73836674/2981f6cc-c61e-40ff-bc67-7ffb2b7ae7c9)
+![home](https://github.com/ashin-coder/earth-resource-database/assets/73836674/3c706419-37e7-4022-ab47-30e243c28731)
 
 The Earth Resource Database is a simple Java-based software project which I developed as part of my Software Developer internship. It showcases a few of the skills in Java programming, database management, and enterprise-level application development which I developed as part of the internship. The project features a modular design, a user-friendly interface, and thorough testing and debugging processes. It connects to an SQLite database using JDBC, ensuring scalability and security. The system includes logging features for traceability and security purposes. Overall, the Earth Resource Database is a robust tool for managing data related to continents, countries, states, agricultural resources, and mineral resources
 
@@ -31,7 +31,7 @@ To run the Earth Resource Database project locally, follow these steps:
 
 9. Open “earth-resource-database-main” File in the IDE
 
-10. Enable annotation processing , if asked in the IDE
+10. Enable annotation processing, if asked in the IDE
 
 11. To Setup Logging of User Activity into the external file “earth0.log” file, go to Run-> Edit Configurations…
 
@@ -80,37 +80,37 @@ The Earth Resource Database exemplifies a quality project developed with enterpr
 A few Screenshots of the Application while in use are given below :
 
 * Home Page
-![home_page](https://github.com/ashin-coder/earth-resource-database/assets/73836674/c831cbb3-6823-4a7b-9c2c-ff332955ec88)
+![home](https://github.com/ashin-coder/earth-resource-database/assets/73836674/d9b4557a-ab91-418a-a918-0c9305e69422)
 
 * Insertion Page
-![insertion_data](https://github.com/ashin-coder/earth-resource-database/assets/73836674/bec5715f-0947-42a9-a7d3-1093a7a68889)
+![image](https://github.com/ashin-coder/earth-resource-database/assets/73836674/d9e1bc32-4697-4cae-b569-67471d8c0d82)
 
 * Update Page
-![update_table](https://github.com/ashin-coder/earth-resource-database/assets/73836674/9729cee9-a42f-441d-936f-26a86a8e5861)
+![update](https://github.com/ashin-coder/earth-resource-database/assets/73836674/f71c2f79-2cc1-472c-abeb-85bb62489714)
 
 * Delete Page
-![delete_data](https://github.com/ashin-coder/earth-resource-database/assets/73836674/72534b0c-b19a-4d47-acd1-6bb6a2af81a1)
+![delete](https://github.com/ashin-coder/earth-resource-database/assets/73836674/181dad99-4f91-4b2f-981a-34d55c481d48)
 
 * View Tables Page
-![view_tables](https://github.com/ashin-coder/earth-resource-database/assets/73836674/12b8356c-21b3-41eb-a02f-09d30537d1b9)
+![view_tables](https://github.com/ashin-coder/earth-resource-database/assets/73836674/1fc3a9fb-7641-407e-8dd0-7e97c4be95b1)
 
 * View Table's Data Page
-![view_table_data](https://github.com/ashin-coder/earth-resource-database/assets/73836674/39c670b9-caf8-4cba-a21a-3b8da43a7326)
+![view_table_data](https://github.com/ashin-coder/earth-resource-database/assets/73836674/aee0fb24-a750-4e73-ab1c-96173555de89)
 
 * View the Population of a given Country based on the State's Population
-![view_population](https://github.com/ashin-coder/earth-resource-database/assets/73836674/8a36c8e2-6c03-490c-a4f8-d9088177e70c)
+![population_country](https://github.com/ashin-coder/earth-resource-database/assets/73836674/d2403a80-bde8-4876-9b23-3933474b40d2)
 
 * View No of States in a given country producing given agriculture resource
-![view_states_agri_res](https://github.com/ashin-coder/earth-resource-database/assets/73836674/bf385bb9-6344-4df9-a16a-68326500aee6)
+![agri_states](https://github.com/ashin-coder/earth-resource-database/assets/73836674/7e7170a5-875a-4b24-8ef9-985cbc4f3055)
 
 * View No of States in a given country producing given mineral resource
-![view_states_min_res](https://github.com/ashin-coder/earth-resource-database/assets/73836674/b26d3a86-014c-4c8c-814f-d9fe2cce4d55)
+![mineral_states](https://github.com/ashin-coder/earth-resource-database/assets/73836674/f16c9faa-5d53-418b-a09e-55697625716d)
 
 * User Action and Events Logged into External File 
-![log_file](https://github.com/ashin-coder/earth-resource-database/assets/73836674/6e9e6ace-80f2-496a-9edd-0eb34494fead)
+![logs](https://github.com/ashin-coder/earth-resource-database/assets/73836674/b482a492-8ec6-4356-8891-a2e14bfe1d2f)
 
 * Database Queries are written in External File
-![queries_img](https://github.com/ashin-coder/earth-resource-database/assets/73836674/4b6b4a7c-6030-4bfe-b348-b6c3074e3e73)
+![queries](https://github.com/ashin-coder/earth-resource-database/assets/73836674/e8debebd-ed0b-412e-91f1-4b50b91bc7ab)
 
 ## Acknowledgments
 
